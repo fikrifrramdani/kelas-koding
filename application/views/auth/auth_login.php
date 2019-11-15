@@ -42,7 +42,8 @@
             </form>
           </div>
           <hr>
-          <p class="footer-text text-center">copyright © <?php  $tahun = date('Y'); echo $tahun; ?> kelas-koding.com. All rights reserved.</p>
+          <p class="footer-text text-center">copyright © <?php $tahun = date('Y');
+                                                          echo $tahun; ?> kelas-koding.com. All rights reserved.</p>
         </div>
       </div>
     </div>

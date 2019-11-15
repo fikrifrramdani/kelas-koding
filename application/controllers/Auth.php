@@ -77,9 +77,9 @@ class Auth extends CI_Controller
 
 		if ($this->form_validation->run() == false) {
 			$data['title'] = 'Register | Kelas-Koding';
-			$this->load->view('templates/authHeader', $data);
-			$this->load->view('auth/register');
-			$this->load->view('templates/authFooter');
+			$this->load->view('templates/auth_header', $data);
+			$this->load->view('auth/auth_register');
+			$this->load->view('templates/auth_footer');
 		} else {
 			// insert data ke database
 			$data = [
