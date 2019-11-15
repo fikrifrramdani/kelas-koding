@@ -1,0 +1,15 @@
+.jumbotron {
+	background: #2d3e50;
+}
+
+.jumbotron-fluid {
+	margin-top: 65px;
+}
+
+.card-login {
+	max-width: 25rem;
+}
+
+.color-navy {
+	background-color: #2d3e50;
+}
