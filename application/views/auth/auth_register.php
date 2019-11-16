@@ -3,61 +3,57 @@
     <div class="content-wrapper d-flex align-items-center auth register-bg-1 theme-one">
       <div class="row w-100">
         <div class="col-lg-5 mx-auto">
-          <h2 class="text-center mb-4">Register</h2>
+          <h2 class="text-center mb-4">Register Account</h2>
           <div class="auto-form-wrapper">
 
-            <form method="post" action="<?= base_url('auth/auth_register'); ?>">
+            <form method="post" action="<?= base_url('auth/register'); ?>">
 
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" class="form-control" id="name" name="name" placeholder="Username" value="<?= set_value('name'); ?>">
-                  <?= form_error('name', '<small class="text-danger">', '</small>'); ?>
-
+                  <input type="text" class="form-control" id="name" name="name" placeholder="Full Name" value="<?= set_value('name'); ?>">
                   <div class="input-group-append">
                     <span class="input-group-text">
                       <i class="mdi mdi-check-circle-outline"></i>
                     </span>
                   </div>
                 </div>
+                <?= form_error('name', '<small class="text-danger">', '</small>'); ?>
               </div>
 
               <div class="form-group">
                 <div class="input-group">
                   <input type="text" class="form-control" id="userName" name="userName" placeholder="Username" value="<?= set_value('userName'); ?>">
-                  <?= form_error('userName', '<small class="text-danger">', '</small>'); ?>
-
                   <div class="input-group-append">
                     <span class="input-group-text">
                       <i class="mdi mdi-check-circle-outline"></i>
                     </span>
                   </div>
                 </div>
+                <?= form_error('userName', '<small class="text-danger">', '</small>'); ?>
               </div>
 
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" class="form-control" id="email" name="email" placeholder="Username" value="<?= set_value('email'); ?>">
-                  <?= form_error('email', '<small class="text-danger">', '</small>'); ?>
-
+                  <input type="text" class="form-control" id="email" name="email" placeholder="email" value="<?= set_value('email'); ?>">
                   <div class="input-group-append">
                     <span class="input-group-text">
                       <i class="mdi mdi-check-circle-outline"></i>
                     </span>
                   </div>
                 </div>
+                <?= form_error('email', '<small class="text-danger">', '</small>'); ?>
               </div>
 
               <div class="form-group">
                 <div class="input-group">
-                  <input type="text" class="form-control" id="gender" name="gender" placeholder="Username" value="<?= set_value('gender'); ?>">
-                  <?= form_error('gender', '<small class="text-danger">', '</small>'); ?>
-
+                  <input type="text" class="form-control" id="gender" name="gender" placeholder="Your Gender" value="<?= set_value('gender'); ?>">
                   <div class="input-group-append">
                     <span class="input-group-text">
                       <i class="mdi mdi-check-circle-outline"></i>
                     </span>
                   </div>
                 </div>
+                <?= form_error('gender', '<small class="text-danger">', '</small>'); ?>
               </div>
 
               <div class="form-group">
@@ -65,7 +61,6 @@
                   <div class="col-md-6">
                     <div class="input-group">
                       <input type="password" id="password1" name="password1" class="form-control" placeholder="Password">
-                      <?= form_error('password1', '<small class="text-danger">', '</small>'); ?>
 
                       <div class="input-group-append">
                         <span class="input-group-text">
@@ -73,6 +68,7 @@
                         </span>
                       </div>
                     </div>
+                    <?= form_error('password1', '<small class="text-danger">', '</small>'); ?>
                   </div>
 
                   <div class="col-md-6">

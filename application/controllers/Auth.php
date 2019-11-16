@@ -31,6 +31,7 @@ class Auth extends CI_Controller
 			if ($user['is_active'] == 1) {
 				if (password_verify($password, $user['password'])) {
 					$data = [
+						'user_name' => $user['user_name'],
 						'email' => $user['email'],
 						'role_id' => $user['role_id'],
 					];
@@ -38,7 +39,7 @@ class Auth extends CI_Controller
 
 					// jika role_id nya 1, redirect ke admin page
 					if ($user['role_id'] == 1) {
-						// jika sia dosen
+						// jika dia dosen
 						if ($user['role_id'] == 2) {
 							redirect('admin');
 						}
@@ -106,7 +107,7 @@ class Auth extends CI_Controller
 		// fungsi logout dan membersihkan session
 		$this->session->unset_userdata('email');
 		$this->session->unset_userdata('role_id');
-
+		// notifikasi logout menggunakan flashdata
 		$this->session->set_flashdata('message', '<div class="alert alert-success">You have been logged out!</div>');
 		redirect('auth', 'refresh');
 	}

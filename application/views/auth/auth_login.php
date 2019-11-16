@@ -9,26 +9,26 @@
               <div class="form-group">
                 <label class="label">Username</label>
                 <div class="input-group">
-                  <input type="text" class="form-control" value="<?= set_value('userName'); ?>" id="userName" name="userName" placeholder="Username">
-                  <?= form_error('userName', '<small class="text-danger">', '</small>') ?>
+                  <input type="text" class="form-control" id="userName" name="userName" placeholder="Username" value="<?= set_value('userName'); ?>">
                   <div class="input-group-append">
                     <span class="input-group-text">
                       <i class="mdi mdi-check-circle-outline"></i>
                     </span>
                   </div>
                 </div>
+                <?= form_error('userName', '<small class="text-danger">', '</small>') ?>
               </div>
               <div class="form-group">
                 <label class="label">Password</label>
                 <div class="input-group">
                   <input type="password" name="password" class="form-control" placeholder="********">
-                  <?= form_error('password', '<small class="text-danger">', '</small>') ?>
                   <div class="input-group-append">
                     <span class="input-group-text">
                       <i class="mdi mdi-check-circle-outline"></i>
                     </span>
                   </div>
                 </div>
+                <?= form_error('password', '<small class="text-danger">', '</small>') ?>
               </div>
               <div class="form-group">
                 <button class="btn btn-primary submit-btn btn-block">Login</button>
